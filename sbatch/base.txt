@@ -1,0 +1,106 @@
+rm -rf *.o
+rm -rf lap
+gcc -o lap -g -Wall lapFusion00.c -lm
+Jacobi relaxation Calculation: 500 x 500 mesh, maximum of 100 iterations
+Total Iterations:   100, ERROR: 0.049183 
+Jacobi relaxation Calculation: 1000 x 1000 mesh, maximum of 100 iterations
+Total Iterations:   100, ERROR: 0.049201 
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+Total Iterations:   100, ERROR: 0.049207 
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+Total Iterations:   100, ERROR: 0.049208 
+rm -rf *.o
+rm -rf lap
+mpicc -o lap lapFusion01.c -lmpi -lm
+lap(): process 2 , init bucle
+lap(): process 6 , init bucle
+lap(): setting initial conditions
+lap(): process 1 , init bucle
+lap(): process 3 , init bucle
+lap(): process 4 , init bucle
+lap(): process 8 , init bucle
+lap(): process 7 , init bucle
+Jacobi relaxation Calculation: 500 x 500 mesh, maximum of 100 iterations
+lap(): process 0 , init bucle
+lap(): process 5 , init bucle
+lap(): process 9 , init bucle
+lap(): process 10 , init bucle
+lap(): process 11 , init bucle
+lap(): process 12 , init bucle
+lap(): process 13 , init bucle
+lap(): process 14 , init bucle
+lap(): process 16 , init bucle
+lap(): process 19 , init bucle
+lap(): process 15 , init bucle
+lap(): process 17 , init bucle
+lap(): process 18 , init bucle
+# Total Iterations:   100, ERROR: 0.049183, 
+lap(): setting initial conditions
+lap(): process 6 , init bucle
+Jacobi relaxation Calculation: 1000 x 1000 mesh, maximum of 100 iterations
+lap(): process 0 , init bucle
+lap(): process 1 , init bucle
+lap(): process 2 , init bucle
+lap(): process 9 , init bucle
+lap(): process 4 , init bucle
+lap(): process 5 , init bucle
+lap(): process 3 , init bucle
+lap(): process 7 , init bucle
+lap(): process 8 , init bucle
+lap(): process 11 , init bucle
+lap(): process 10 , init bucle
+lap(): process 15 , init bucle
+lap(): process 14 , init bucle
+lap(): process 13 , init bucle
+lap(): process 17 , init bucle
+lap(): process 19 , init bucle
+lap(): process 12 , init bucle
+lap(): process 16 , init bucle
+lap(): process 18 , init bucle
+# Total Iterations:   100, ERROR: 0.049201, 
+lap(): setting initial conditions
+lap(): process 5 , init bucle
+lap(): process 3 , init bucle
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): process 0 , init bucle
+lap(): process 2 , init bucle
+lap(): process 4 , init bucle
+lap(): process 9 , init bucle
+lap(): process 6 , init bucle
+lap(): process 7 , init bucle
+lap(): process 8 , init bucle
+lap(): process 1 , init bucle
+lap(): process 11 , init bucle
+lap(): process 13 , init bucle
+lap(): process 17 , init bucle
+lap(): process 15 , init bucle
+lap(): process 10 , init bucle
+lap(): process 12 , init bucle
+lap(): process 14 , init bucle
+lap(): process 16 , init bucle
+lap(): process 18 , init bucle
+lap(): process 19 , init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+lap(): process 18 , init bucle
+lap(): process 10 , init bucle
+lap(): process 16 , init bucle
+lap(): process 14 , init bucle
+lap(): process 7 , init bucle
+lap(): process 3 , init bucle
+lap(): process 2 , init bucle
+lap(): process 4 , init bucle
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): process 0 , init bucle
+lap(): process 5 , init bucle
+lap(): process 9 , init bucle
+lap(): process 1 , init bucle
+lap(): process 6 , init bucle
+lap(): process 8 , init bucle
+lap(): process 11 , init bucle
+lap(): process 15 , init bucle
+lap(): process 17 , init bucle
+lap(): process 13 , init bucle
+lap(): process 19 , init bucle
+lap(): process 12 , init bucle
+# Total Iterations:   100, ERROR: 0.049208, 

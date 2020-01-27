@@ -1,0 +1,2 @@
+# Total Iterations:    10, ERROR: 0.154799, 
+0.001401

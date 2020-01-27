@@ -1,0 +1,198 @@
+rm -rf *.o
+rm -rf lap
+mpicc -o lap -g -Wall lapFusion04.c -fopenmp -lmpi -lm
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 8 init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 7 init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 9 init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 1 init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 2000 x 2000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 9 init bucle
+# Total Iterations:   100, ERROR: 0.049207, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 1 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 7 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 8 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 6 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 4000 x 4000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 8 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 8000 x 8000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 4 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 8000 x 8000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 5 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 8000 x 8000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 2 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 8000 x 8000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 7 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 8 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 
+lap(): setting initial conditions
+Jacobi relaxation Calculation: 8000 x 8000 mesh, maximum of 100 iterations
+lap(): rank : 0 init bucle
+lap(): rank : 1 init bucle
+lap(): rank : 6 init bucle
+lap(): rank : 2 init bucle
+lap(): rank : 3 init bucle
+lap(): rank : 4 init bucle
+lap(): rank : 8 init bucle
+lap(): rank : 5 init bucle
+lap(): rank : 9 init bucle
+lap(): rank : 7 init bucle
+# Total Iterations:   100, ERROR: 0.049208, 

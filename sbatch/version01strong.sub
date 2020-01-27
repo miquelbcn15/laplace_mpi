@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+#SBATCH --job-name=version01strong
+#SBATCH --output=version01strong.txt
+#
+#SBATCH -N 11 # number of nodes
+#SBATCH -n 128 # number of cores
+#SBATCH --partition=nodo.q
+#SBATCH --exclusive
+#SBATCH --nodelist=clus[01-06,08-12]
+
+module load openmpi/3.0.0
+module load gcc/8.2.0
+cd ../src
+
+make realclean
+make all version=01
+
+rm -f ../data/strong/version01_512_100.txt
+
+for ((i=4; i<=128; i*=2))
+do
+    mpirun -np ${i} lap 512 100 >> ../data/strong/version01_512_100.txt
+done
+
+rm -f ../data/strong/version01_1024_100.txt
+
+for ((i=4; i<=128; i*=2))
+do
+    mpirun -np ${i} lap 1024 100 >> ../data/strong/version01_1024_100.txt
+done
+
+rm -f ../data/strong/version01_2048_100.txt
+
+for ((i=4; i<=128; i*=2))
+do
+    mpirun -np ${i} lap 2048 100 >> ../data/strong/version01_2048_100.txt
+done
+
+rm -f ../data/strong/version01_4096_100.txt
+
+for ((i=4; i<=128; i*=2))
+do
+    mpirun -np ${i} lap 4096 100 >> ../data/strong/version01_4096_100.txt
+done
+
+rm -f ../data/strong/version01_8192_100.txt
+
+for ((i=4; i<=128; i*=2))
+do
+    mpirun -np ${i} lap 8192 100 >> ../data/strong/version01_8192_100.txt
+done
+
+# rm -f ../data/weak/version01.txt
+# 
+# size=512
+# for ((i=4;i<=128; i*=2))
+# do
+#     mpirun -np ${i} lap ${size} 100 >> ../data/weak/version01.txt
+#     size=$(size*2)
+# done

@@ -1,0 +1,4 @@
+/bib/*
+bib/
+*.pdf
+!barcelona_mertens_report.pdf

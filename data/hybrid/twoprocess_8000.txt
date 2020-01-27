@@ -1,0 +1,3 @@
+# size iter_max nprocs threads time
+ 8000 100 20 2 5.289402
+ 8000 100 20 4 2.696730

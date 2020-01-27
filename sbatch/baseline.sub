@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+#SBATCH --job-name=base
+#SBATCH --output=base.txt
+#SBATCH -N 2    # number of nodes
+#SBATCH -n 20   # number of cores 
+#SBATCH --partition=nodo.q
+#SBATCH --exclusive
+#SBATCH --nodelist=clus[11-12]
+
+module load openmpi/3.0.0
+module load gcc/8.2.0
+cd ../src
+
+# version 00
+make realclean
+make all version=00
+
+size=(500 1000 2000 4000)
+
+rm -f ../data/base/base_version00.txt
+echo "# size time" >> ../data/base/base_version00.txt
+
+for i in "${size[@]}"
+do
+    ./lap ${i} 100 >> ../data/base/base_version00.txt
+done
+
+# version 01
+make realclean
+make all version=01
+
+rm -f ../data/base/base_version01.txt
+echo "# size nprocs time" >> ../data/base/base_version01.txt
+
+for i in "${size[@]}"
+do
+    mpirun -np 20 lap ${i} 100 >> ../data/base/base_version01.txt
+done

@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+# This script uses one process per node and varying the number of threads from 4 to 12
+#
+#SBATCH --job-name=hybrid_two
+#SBATCH --output=hybrid_two.txt
+#
+#SBATCH -N 10               # number of nodes
+#SBATCH --ntasks=20         # number of tasks
+#SBATCH --ntasks-per-node=2
+#SBATCH --cpus-per-task=6  # number of threads per task
+#SBATCH --nodelist=clus[01-04,06,08-12]
+#SBATCH --distribution=cyclic
+#SBATCH --partition=nodo.q
+#SBATCH --exclusive
+
+module load openmpi/3.0.0
+cd ../src/
+
+make realclean
+make all version=04
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+size=(2000 4000 8000 10000)
+for j in "${size[@]}"
+do
+    rm -f ../data/hybrid/twoprocess_${j}.txt
+    echo "# size iter_max nprocs threads time" > ../data/hybrid/twoprocess_${j}.txt
+
+    for i in {2..4..2}
+    do  
+        omp_threads=${i}
+        export OMP_NUM_THREADS=$omp_threads
+        mpirun ./lap ${j} 100 >> ../data/hybrid/twoprocess_${j}.txt
+    done
+done
+
+# rm -f ../data/hybrid.txt
+# for ((i=2; i<=22; i+=2))
+# do
+#     size=$(($i*200))
+#     mpirun -np ${i} ./lap ${size} 100 >> ../data/hybrid.txt
+# done
